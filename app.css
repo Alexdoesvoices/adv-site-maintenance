@@ -1,0 +1,22 @@
+:root {
+    --background_color: #1c1b22;
+    --heading_color: azure;
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--heading_color);
+}
+div.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100svh;
+}
+h1 {
+    text-align: center;
+}
+body {
+    background-color: var(--background_color);
+}

@@ -1,22 +1,40 @@
 :root {
     --background_color: #1c1b22;
     --heading_color: azure;
+    --hover_color: royalblue;
 }
 * {
     margin: 0;
     padding: 0;
     color: var(--heading_color);
 }
+body {
+    background-color: var(--background_color);
+    overflow: hidden;
+	overscroll-behavior: none;
+    height: 100vh;
+}
 div.center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100svh;
+    height: inherit;
+    h1,h2 {
+        text-align: center;
+    }
 }
-h1 {
-    text-align: center;
+div.links {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    a{ 
+        color: var(--heading_color);
+        text-align: center;
+    }
+    a:hover {
+        color: var(--hover_color);
+    }
 }
-body {
-    background-color: var(--background_color);
-}
+
+
